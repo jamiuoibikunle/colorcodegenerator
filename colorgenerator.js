@@ -1,21 +1,21 @@
-// Create a class function with the name ColorGenerator
-const ColorGenerator = () => {
+const paper = () => {
 
-  // Declare randomNum and give it an initial value of #
-  let randomNum = '#';
+let generatedcolor = document.getElementById('generatedcolor');
 
-  // Loop i to iterate six times
-  for (let i = 0; i < 6; ++i) {
+  
+// Declare randomNum and give it an initial value of #
+let randomNum = '#';
 
-    // Generate random numbers between 0 and 9
-    let ran = Math.floor(Math.random() * 10)
+// Loop i to iterate six times
+for (let i = 0; i < 6; ++i) {
 
-    // For each of the generated number, add the number to randomNum
-    randomNum += ran
-  }
+  // Generate random numbers between 0 and 9
+  let ran = Math.floor(Math.random() * 10)
 
-  // Return randomNum after six integers between 0 and 9 have been added
-  return <h1>{randomNum}</h1>
+  // For each of the generated number, add the number to randomNum
+  randomNum += ran
 }
 
-export default ColorGenerator
+generatedcolor.style.backgroundColor = randomNum;
+
+}
