@@ -1,4 +1,4 @@
-const paper = () => {
+const changecolor = () => {
 
 let generatedcolor = document.getElementById('generatedcolor');
 
